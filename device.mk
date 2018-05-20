@@ -28,11 +28,11 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -52,16 +52,16 @@ PRODUCT_COPY_FILES += \
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapsize=512m \
+    dalvik.vm.heapgrowthlimit=190m \
+    dalvik.vm.heapsize=196m \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
-    dalvik.vm.heapmaxfree=8m
+    dalvik.vm.heapmaxfree=159m
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=96 \
-    ro.hwui.layer_cache_size=64 \
+    ro.hwui.texture_cache_size=64 \
+    ro.hwui.layer_cache_size=34 \
     ro.hwui.r_buffer_cache_size=12 \
     ro.hwui.path_cache_size=39 \
     ro.hwui.gradient_cache_size=1 \
